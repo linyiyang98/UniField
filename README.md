@@ -54,13 +54,13 @@ pip install -r requirements.txt
 ### Training
 
 ```bash
-python train.py --config configs/unifield_sr.yaml
+python train.py --config configs/experiments/unifield_sr.yaml
 ```
 
 ### Inference / Testing
 
 ```bash
-python test.py --config configs/unifield_sr.yaml --checkpoint path/to/best.pth
+python test.py --config configs/experiments/unifield_sr.yaml --checkpoint path/to/best.pth
 ```
 
 ---
@@ -70,7 +70,7 @@ python test.py --config configs/unifield_sr.yaml --checkpoint path/to/best.pth
 All hyper-parameters live in `configs/`. Copy and edit a YAML file to run your own experiments:
 
 ```yaml
-# configs/unifield_sr.yaml
+# configs/experiments/unifield_sr.yaml
 model:
   name: UniField
   in_channels: 1
