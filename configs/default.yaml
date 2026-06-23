@@ -1,0 +1,47 @@
+# Default base configuration for UniField.
+# Specific experiment configs inherit from this and override as needed.
+
+model:
+  name: UniField
+  in_channels: 1
+  out_channels: 1
+  base_channels: 64
+  num_res_blocks: 4        # residual blocks per encoder stage
+  num_decoder_stages: 4    # number of decoder upsampling stages
+  field_embed_dim: 32      # dimensionality of B0 field embedding
+  num_field_strengths: 4   # number of supported B0 values (0.35T,1.5T,3T,7T)
+
+data:
+  train_root: data/train
+  val_root: data/val
+  test_root: data/test
+  patch_size: [64, 64, 32]   # [H, W, D] training patch size
+  scale_factor: 4            # super-resolution up-scale factor
+  task: sr                   # 'sr' | 'denoise' | 'sr+denoise'
+  noise_sigma: 0.05          # Gaussian noise std (used when task contains 'denoise')
+  num_workers: 4
+  pin_memory: true
+
+training:
+  epochs: 200
+  batch_size: 4
+  lr: 1.0e-4
+  weight_decay: 1.0e-5
+  scheduler: cosine          # 'cosine' | 'step' | 'plateau'
+  warmup_epochs: 5
+  clip_grad_norm: 1.0
+  save_dir: checkpoints
+  log_dir: runs
+  val_every: 1               # validate every N epochs
+  save_every: 10             # save checkpoint every N epochs
+  seed: 42
+
+loss:
+  l1_weight: 1.0
+  perceptual_weight: 0.1
+  ssim_weight: 0.1
+
+inference:
+  checkpoint: ~              # path to model checkpoint
+  output_dir: outputs
+  tta: false                 # test-time augmentation

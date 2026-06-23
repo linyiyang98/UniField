@@ -1,0 +1,18 @@
+# Super-resolution experiment: 4× isotropic upsampling, all field strengths.
+defaults:
+  - ../default
+
+data:
+  task: sr
+  scale_factor: 4
+  patch_size: [64, 64, 32]
+
+training:
+  epochs: 200
+  batch_size: 4
+  lr: 1.0e-4
+
+loss:
+  l1_weight: 1.0
+  perceptual_weight: 0.1
+  ssim_weight: 0.1
