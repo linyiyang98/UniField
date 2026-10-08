@@ -1,0 +1,21 @@
+UniField: A Unified Field-Aware MRI Enhancement Framework
+
+This repository contains selected code adapted from the author's local FlashVSR
+MRI implementation and the Apache-2.0 FlashVSR / DiffSynth Studio codebase.
+
+FlashVSR: Junhao Zhuang, Shi Guo, Xin Cai, Xiaohui Li, Yihao Liu,
+Chun Yuan, Tianfan Xue. https://github.com/OpenImagingLab/FlashVSR
+DiffSynth Studio: https://github.com/modelscope/DiffSynth-Studio
+The Tiny Conditional Decoder derives from taehv:
+https://github.com/madebyollin/taehv
+Copyright (c) 2025 Ollin Boer Bohan. MIT license retained in
+third_party/taehv-MIT.txt. Its decoder has been pruned, widened and adapted
+for bidirectional MRI slice decoding in unifield/backbones/tcdecoder.py.
+
+Retained backbone files live in unifield/backbones. UniField additions include
+FASFL, explicit MRI manifests, sparse SDPA reference execution, differentiable
+cross-attention, DDP training, checkpointing and NIfTI evaluation.
+
+Third-party pretrained weights are supplied separately and retain their upstream
+terms, source links, and licenses. Our trained UniField LoRA weights, optimizer
+states, and training checkpoints are private and are not released.

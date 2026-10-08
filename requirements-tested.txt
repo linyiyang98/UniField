@@ -1,0 +1,16 @@
+# Runtime used for the GPU 4/5 validation (Python 3.11).
+# Install torch/torchvision with the CUDA 12.8 wheel index first; see README.
+torch==2.10.0
+numpy==2.2.6
+monai==1.5.1
+nibabel==5.3.2
+peft==0.18.1
+transformers==5.6.0
+safetensors==0.6.2
+einops==0.8.1
+scikit-image==0.26.0
+PyYAML==6.0.3
+ftfy==6.3.1
+sentencepiece==0.2.1
+lpips==0.1.4
+torchvision==0.25.0

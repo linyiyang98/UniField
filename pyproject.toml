@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unifield-mri"
+version = "0.1.0"
+description = "Unified field-aware MRI enhancement with FlashVSR and FASFL"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "third_party/*.txt", "pretrained/licenses/*.txt"]
+dependencies = ["torch>=2.6,<2.11", "numpy>=1.26,<3", "monai>=1.5,<1.7", "nibabel>=5.3,<6", "peft>=0.16,<0.20", "transformers>=4.46,<6", "safetensors>=0.5,<0.7", "einops>=0.8,<0.9", "scikit-image>=0.25,<0.27", "PyYAML>=6,<7", "ftfy>=6.3,<7", "sentencepiece>=0.2,<0.3", "tqdm>=4.66"]
+
+[project.optional-dependencies]
+registration = ["SimpleITK>=2.4,<3"]
+test = ["pytest>=8"]
+metrics = ["lpips==0.1.4", "torchvision>=0.21,<0.26"]
+
+[tool.setuptools.packages.find]
+include = ["unifield*"]

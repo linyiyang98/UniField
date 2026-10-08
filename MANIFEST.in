@@ -1,0 +1,17 @@
+include LICENSE NOTICE README.md CITATION.cff requirements-tested.txt .gitignore
+recursive-include third_party *.txt
+recursive-include configs *.yaml
+exclude configs/local*.yaml
+recursive-include docs *.md
+recursive-include scripts *.sh *.py
+recursive-include .github *.yml
+prune runs
+prune cache
+prune data
+prune manifests
+prune checkpoints
+prune weights
+prune pretrained
+include pretrained/README.md pretrained/manifest.json
+recursive-include pretrained/licenses *.txt
+global-exclude *.pt *.pth *.ckpt *.safetensors *.bin *.onnx

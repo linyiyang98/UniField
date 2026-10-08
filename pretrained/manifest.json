@@ -1,0 +1,97 @@
+{
+  "policy": "Public upstream pretrained assets only; locally trained LoRA/checkpoints are private.",
+  "assets": [
+    {
+      "path": "FlashVSR/diffusion_pytorch_model_streaming_dmd.safetensors",
+      "bytes": 5676070392,
+      "sha256": "b05be65078a22000d8efdb6ce212133fd043255371c015329e9f3d31645c62c5",
+      "upstream_repo": "JunhaoZhuang/FlashVSR",
+      "upstream_revision": "e66dcfc0e155367370871f6e59fd0805b16093e1",
+      "upstream_url": "https://huggingface.co/JunhaoZhuang/FlashVSR/resolve/e66dcfc0e155367370871f6e59fd0805b16093e1/diffusion_pytorch_model_streaming_dmd.safetensors",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    },
+    {
+      "path": "FlashVSR/Wan2.1_VAE.pth",
+      "bytes": 507609880,
+      "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+      "upstream_repo": "JunhaoZhuang/FlashVSR",
+      "upstream_revision": "e66dcfc0e155367370871f6e59fd0805b16093e1",
+      "upstream_url": "https://huggingface.co/JunhaoZhuang/FlashVSR/resolve/e66dcfc0e155367370871f6e59fd0805b16093e1/Wan2.1_VAE.pth",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    },
+    {
+      "path": "FlashVSR/LQ_proj_in.ckpt",
+      "bytes": 575695268,
+      "sha256": "7ad76b2cc682d72e9521c5fa6bf15850c974c8aff9a04c92882b49c0517ffb94",
+      "upstream_repo": "JunhaoZhuang/FlashVSR",
+      "upstream_revision": "e66dcfc0e155367370871f6e59fd0805b16093e1",
+      "upstream_url": "https://huggingface.co/JunhaoZhuang/FlashVSR/resolve/e66dcfc0e155367370871f6e59fd0805b16093e1/LQ_proj_in.ckpt",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    },
+    {
+      "path": "FlashVSR/TCDecoder.ckpt",
+      "bytes": 189018333,
+      "sha256": "e224bdcf2f52745cbf4d393ff5374c2ba09e90285d5d19062d2bf63b915b6161",
+      "upstream_repo": "JunhaoZhuang/FlashVSR",
+      "upstream_revision": "e66dcfc0e155367370871f6e59fd0805b16093e1",
+      "upstream_url": "https://huggingface.co/JunhaoZhuang/FlashVSR/resolve/e66dcfc0e155367370871f6e59fd0805b16093e1/TCDecoder.ckpt",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    },
+    {
+      "path": "FlashVSR/models_t5_umt5-xxl-enc-bf16.pth",
+      "bytes": 11361920418,
+      "sha256": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "upstream_repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "upstream_revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "upstream_url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/resolve/37ec512624d61f7aa208f7ea8140a131f93afc9a/models_t5_umt5-xxl-enc-bf16.pth",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    },
+    {
+      "path": "FlashVSR/google/umt5-xxl/special_tokens_map.json",
+      "bytes": 6623,
+      "sha256": "7b8a9f5040adb67b5805abdfd42c1f8d0f3d0e711f10726580eb3789cd0ad61d",
+      "upstream_repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "upstream_revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "upstream_url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/resolve/37ec512624d61f7aa208f7ea8140a131f93afc9a/google/umt5-xxl/special_tokens_map.json",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    },
+    {
+      "path": "FlashVSR/google/umt5-xxl/spiece.model",
+      "bytes": 4548313,
+      "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458",
+      "upstream_repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "upstream_revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "upstream_url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/resolve/37ec512624d61f7aa208f7ea8140a131f93afc9a/google/umt5-xxl/spiece.model",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    },
+    {
+      "path": "FlashVSR/google/umt5-xxl/tokenizer.json",
+      "bytes": 16837417,
+      "sha256": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b",
+      "upstream_repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "upstream_revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "upstream_url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/resolve/37ec512624d61f7aa208f7ea8140a131f93afc9a/google/umt5-xxl/tokenizer.json",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    },
+    {
+      "path": "FlashVSR/google/umt5-xxl/tokenizer_config.json",
+      "bytes": 61728,
+      "sha256": "ed9a3a8b0faa71a70a32847e0435fe036e6e112d4df4edb7bb48a921e344dc05",
+      "upstream_repo": "Wan-AI/Wan2.1-T2V-1.3B",
+      "upstream_revision": "37ec512624d61f7aa208f7ea8140a131f93afc9a",
+      "upstream_url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/resolve/37ec512624d61f7aa208f7ea8140a131f93afc9a/google/umt5-xxl/tokenizer_config.json",
+      "license": "Apache-2.0",
+      "matches_official_asset": true
+    }
+  ],
+  "total_bytes": 18331768372,
+  "local_lora_included": false
+}

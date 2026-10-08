@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+weights/
+cache/
+data/
+manifests/
+runs/
+configs/local*.yaml
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.nii
+*.nii.gz
+dist/
+build/
+checkpoints/
+*.bin
+*.onnx
+# Large third-party binaries are hosted as separate PUBLIC model assets.
+# These packaging exclusions do not make upstream pretrained assets private.
+/pretrained/FlashVSR/

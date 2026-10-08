@@ -1,0 +1,34 @@
+# Paths are portable placeholders: override them in an ignored local YAML.
+model:
+  weights_dir: pretrained/FlashVSR
+  tokenizer_dir: pretrained/FlashVSR/google/umt5-xxl
+  context_dir: cache/text
+  lora_rank: 128             # Existing author's code; not specified in paper.
+  lora_alpha: 128
+  attention_backend: sdpa   # Same LCSA mask, no binary CUDA extension required.
+  gradient_checkpointing: true
+data:
+  root: data
+  train_manifest: manifests/train.csv
+  val_manifest: null
+  test_manifest: manifests/test.csv
+  spatial_size: [256, 256, 160]
+  train_frames: 40          # Existing author's code; crop length not specified in paper.
+  augment: false           # Paper does not specify augmentation.
+training:
+  batch_size: 1             # Per GPU; world_size=2 => global batch_size=2.
+  steps: 1000
+  decay_start: 500
+  lr: 0.0001
+  seed: 2026
+  max_grad_norm: 1.0
+  save_every: 100
+loss:
+  lambda_freq: 0.1
+  alpha: 1.0
+  band_edges: [0.3333333333333333, 0.6666666666666666] # Unspecified in paper; documented choice.
+inference:
+  steps: 1                 # FlashVSR default; paper does not specify ODE step count.
+  topk_ratio: 2.0
+  local_range: 11
+  seed: 0

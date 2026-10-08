@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the UniField paper and FlashVSR when using this code."
+title: "UniField: A Unified Field-Aware MRI Enhancement Framework"
+authors:
+  - family-names: Lin
+    given-names: Yiyang
+  - family-names: Wang
+    given-names: Chenhui
+  - family-names: Peng
+    given-names: Zhihao
+  - family-names: Yuan
+    given-names: Yixuan
+version: 0.1.0
+url: "https://github.com/linyiyang98/UniField"
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2603.09223"
+license: Apache-2.0
